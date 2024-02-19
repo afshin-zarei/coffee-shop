@@ -689,6 +689,10 @@ body {
   width: 1px;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .items-center {
   align-items: center;
 }
@@ -885,6 +889,18 @@ body {
 .child-hover\:text-orange-300 > *:hover {
   --tw-text-opacity: 1;
   color: rgb(253 186 116 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:block) {
+  display: block;
+}
+
+:is(.dark .dark\:inline-block) {
+  display: inline-block;
+}
+
+:is(.dark .dark\:hidden) {
+  display: none;
 }
 
 :is(.dark .dark\:bg-zinc-700) {
