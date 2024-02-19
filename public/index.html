@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="rtl" class="kd dark">
+
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -91,17 +92,17 @@
                </div>
                <!-- Menu -->
                <ul
-                  class="font- h-14 flex items-center gap-x-9 text-xl text-gray-300 tracking-tightest"
+                  class="h-14 flex gap-x-9 text-xl text-gray-300 tracking-tightest child:leading-[56px]"
                >
                   <li class="text-orange-200">
                      <a href="#">صفحه اصلی</a>
                   </li>
                   <!-- Has Sub -->
-                  <li class="relative">
-                     <a href="#">فروشگاه</a>
+                  <li class="relative group">
+                     <a href="#" class="group-hover:text-orange-300 transition-colors">فروشگاه</a>
                      <!-- Submenu -->
                      <ul
-                        class="absolute top-12 w-52 pt-[21px] px-6 pb-[27px] rounded-2xl border-t-[3px] border-orange-300 bg-white dark:bg-zinc-700 text-base text-zinc-700 dark:text-zinc-700 space-y-4 tracking-normal shadow-normal child:transition-colors child-hover:text-orange-300"
+                        class="absolute top-full opacity-0 invisible group-hover:visible group-hover:opacity-100 w-52 pt-[21px] px-6 pb-[27px] rounded-2xl border-t-[3px] border-orange-300 bg-white dark:bg-zinc-700 text-base text-zinc-700 dark:text-white space-y-4 tracking-normal shadow-normal child:transition-all child:inline-block child-hover:text-orange-300 child-hover:font-medium transition-all"
                      >
                         <li><a href="#">قهوه ویژه</a></li>
                         <li><a href="#">ویژه در سطح جهانی</a></li>
@@ -119,13 +120,24 @@
             </nav>
             <!-- Cart & Theme Toggle, Login Link -->
             <div class="flex gap-x-10 text-orange-200">
-               <!-- Cart -->
+               <!-- Cart Icon & Theme Switch Btn -->
                <div class="flex items-center gap-x-5">
+                  <!-- Card -->
                   <div>
-                     <svg class="w-8 h-8">
-                        <use xlink:href="#shopping-bag"></use>
-                     </svg>
+                     <!-- Card Icon Hover -->
+                     <div>
+                        <svg class="w-8 h-8">
+                           <use xlink:href="#shopping-bag"></use>
+                        </svg>
+                     </div>
+
+                     <!-- Card Box -->
+                     <div></div>
+                     
+                     
                   </div>
+
+
                   <!-- Theme Switch Btn -->
                   <div>
                      <svg class="w-8 h-8">
@@ -141,7 +153,7 @@
                   <svg class="w-8 h-8">
                      <use xlink:href="#arrow-right-end-on-rectangle"></use>
                   </svg>
-                  <span>ورود | ثبت‌نام</span>
+                  <span class="font-Dana">ورود | ثبت‌نام</span>
                </a>
             </div>
          </div>
