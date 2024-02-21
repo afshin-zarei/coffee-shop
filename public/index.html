@@ -77,6 +77,19 @@
                d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25"
             />
          </symbol>
+         <symbol id="chevron-left"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 25 27"
+            stroke-width="2"
+            stroke="currentColor"
+         >
+            <path
+               stroke-linecap="round"
+               stroke-linejoin="round"
+               d="M15.75 19.5 8.25 12l7.5-7.5"
+            />
+         </symbol>
       </svg>
 
       <header
@@ -105,7 +118,7 @@
                      >
                      <!-- Submenu -->
                      <ul
-                        class="absolute top-full opacity-0 invisible group-hover:visible group-hover:opacity-100 w-52 pt-[21px] px-6 pb-[27px] rounded-2xl border-t-[3px] border-orange-300 bg-white dark:bg-zinc-700 text-base text-zinc-700 dark:text-white space-y-4 tracking-normal shadow-normal child:transition-all child:inline-block child-hover:text-orange-300 child-hover:font-medium transition-all"
+                        class="absolute top-full opacity-0 invisible group-hover:visible group-hover:opacity-100 w-52 pt-[21px] px-6 pb-[27px] rounded-2xl border-t-[3px] border-t-orange-300 bg-white dark:bg-zinc-700 text-base text-zinc-700 dark:text-white space-y-4 tracking-normal shadow-normal child:transition-all child:inline-block child-hover:text-orange-300 child-hover:font-medium transition-all"
                      >
                         <li><a href="#">قهوه ویژه</a></li>
                         <li><a href="#">ویژه در سطح جهانی</a></li>
@@ -126,7 +139,7 @@
                <!-- Cart Icon & Theme Switch Btn -->
                <div class="flex items-center gap-x-5">
                   <!-- Card -->
-                  <div>
+                  <div class="relative group">
                      <!-- Card Icon Hover -->
                      <div>
                         <svg class="w-8 h-8">
@@ -135,7 +148,31 @@
                      </div>
 
                      <!-- Card Box -->
-                     <div></div>
+                     <div
+                        class="absolute left-0 top-full w-[400px] p-5 group-hover:visible group-hover:opacity-100 font-Dana rounded-2xl border-t-[3px] border-t-orange-300 bg-white dark:bg-zinc-700 text-base text-zinc-700 dark:text-white shadow-normal child:transition-all"
+                     >
+                        <!-- Card Header -->
+                        <div class="flex items-center justify-between text-xs tracking-tighter">
+                           <span class="text-gray-300">1 مورد</span>
+                           <a href="" class="flex items-center text-orange-300">
+                              <span>مشاهده سبد خرید</span>
+                              
+                                 <svg class="w-4 h-4">
+                                    <use href="#chevron-left"></use>
+                                 </svg>
+                              
+                           </a>
+                        </div>
+
+                        <!-- Card Body -->
+                        <div>
+                           
+                        </div>
+
+                        <!-- Card Footer -->
+                        <div></div>
+
+                     </div>
                   </div>
 
                   <!-- Theme Switch Btn -->
