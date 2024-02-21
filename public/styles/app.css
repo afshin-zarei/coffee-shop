@@ -447,27 +447,30 @@ video {
 @font-face {
   font-family: "Dana";
 
-  src: local("Dana"), url("../fonts/Dana/woff2/DanaFaNum-Regular.woff2")
+  /* 400 */
+
+  src: url("../fonts/Dana/woff2/DanaFaNum-Regular.woff2") format("woff2");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DanaMedium";
+
+  /* 500 */
+
+  src: url("../public/fonts/Dana/woff2/DanaFaNum-Medium.woff2")
          format("woff2");
 
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Dana Meduium";
+  font-family: "DanaDemiBold";
 
-  src: local("Dana Meduium"),
-         url("../public/fonts/Dana/woff2/DanaFaNum-Medium.woff2")
-         format("woff2");
+  /* 600 */
 
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Dana DemiBold";
-
-  src: local("Dana DemiBold"),
-         url("../public/fonts/Dana/woff2/DanaFaNum-DemiBold.woff2")
+  src: url("../public/fonts/Dana/woff2/DanaFaNum-DemiBold.woff2")
          format("woff2");
 
   font-display: swap;
@@ -476,8 +479,7 @@ video {
 @font-face {
   font-family: "Morabba Light";
 
-  src: local("Morabba Light"),
-         url("../public/fonts/Morabba/woff2/Morabba-Light.woff2")
+  src: url("../public/fonts/Morabba/woff2/Morabba-Light.woff2")
          format("woff2");
 
   font-display: swap;
@@ -488,7 +490,7 @@ video {
 
   src: local("Morabba Meduium"),
          url("../public/fonts/Morabba/woff2/Morabba-Light.woff2")
-         format("woff2");
+            format("woff2");
 
   font-display: swap;
 }
@@ -503,7 +505,7 @@ video {
 }
 
 body {
-  background-image: url("../images/headerBgDesktop.png");
+  background-image: url("../images/headerBgDesktop.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -645,6 +647,10 @@ body {
   margin-right: auto;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -665,24 +671,24 @@ body {
   height: 6rem;
 }
 
-.h-3 {
-  height: 0.75rem;
-}
-
-.h-8 {
-  height: 2rem;
+.h-30 {
+  height: 7.5rem;
 }
 
 .h-4 {
   height: 1rem;
 }
 
-.h-5 {
-  height: 1.25rem;
+.h-8 {
+  height: 2rem;
 }
 
-.w-3 {
-  width: 0.75rem;
+.w-30 {
+  width: 7.5rem;
+}
+
+.w-4 {
+  width: 1rem;
 }
 
 .w-52 {
@@ -709,16 +715,12 @@ body {
   width: 1px;
 }
 
-.w-4 {
-  width: 1rem;
-}
-
-.w-5 {
-  width: 1.25rem;
-}
-
 .cursor-pointer {
   cursor: pointer;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -740,6 +742,16 @@ body {
 .gap-x-10 {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
+}
+
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
+.gap-x-2\.5 {
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
 }
 
 .gap-x-5 {
@@ -766,13 +778,26 @@ body {
   border-radius: 1.5rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-t-\[3px\] {
   border-top-width: 3px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
 }
 
 .border-t-orange-300 {
   --tw-border-opacity: 1;
   border-top-color: rgb(253 186 116 / var(--tw-border-opacity));
+}
+
+.border-b-gray-300 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
 .bg-black\/50 {
@@ -790,6 +815,10 @@ body {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-6 {
@@ -818,17 +847,30 @@ body {
   padding-top: 21px;
 }
 
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .font-Dana {
   font-family: Dana;
 }
 
 .font-DanaMedium {
-  font-family: Dana Medium;
+  font-family: DanaMedium;
 }
 
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl {
@@ -839,6 +881,10 @@ body {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.leading-tight {
+  line-height: 1.25;
 }
 
 .tracking-normal {
@@ -866,6 +912,11 @@ body {
 .text-orange-300 {
   --tw-text-opacity: 1;
   color: rgb(253 186 116 / var(--tw-text-opacity));
+}
+
+.text-teal-600 {
+  --tw-text-opacity: 1;
+  color: rgb(13 148 136 / var(--tw-text-opacity));
 }
 
 .text-zinc-700 {
@@ -945,6 +996,19 @@ body {
   display: none;
 }
 
+:is(.dark .dark\:border) {
+  border-width: 1px;
+}
+
+:is(.dark .dark\:border-b-white) {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+:is(.dark .dark\:border-b-white\/10) {
+  border-bottom-color: rgb(255 255 255 / 0.1);
+}
+
 :is(.dark .dark\:bg-zinc-700) {
   --tw-bg-opacity: 1;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
@@ -953,6 +1017,11 @@ body {
 :is(.dark .dark\:bg-zinc-800) {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:text-emerald-500) {
+  --tw-text-opacity: 1;
+  color: rgb(16 185 129 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:text-white) {
