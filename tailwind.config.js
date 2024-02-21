@@ -20,8 +20,8 @@ module.exports = {
          },
          fontFamily: {
             Dana: "Dana",
-            DanaMedium: "Dana Medium",
-            DanaDemiBold: "Dana DemiBold",
+            DanaMedium: "DanaMedium",
+            DanaDemiBold: "DanaDemiBold",
             MorabbaLight: "Morabba Light",
             MorabbaMedium: "Morabba Medium",
             MorabbaBold: "morabba Bold",
@@ -29,6 +29,9 @@ module.exports = {
          letterSpacing: {
             tightest: "-.065em",
          },
+         spacing : {
+            "30" : "7.5rem"
+         }
       },
    },
    plugins: [
