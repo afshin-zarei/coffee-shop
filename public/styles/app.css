@@ -449,7 +449,7 @@ video {
 
   /* 400 */
 
-  src: url("../fonts/Dana/woff2/DanaFaNum-Regular.woff2") format("woff2");
+  src: local("Dana"), url("../fonts/Dana/woff2/DanaFaNum-Regular.woff2") format("woff2");
 
   font-display: swap;
 }
@@ -459,7 +459,7 @@ video {
 
   /* 500 */
 
-  src: url("../public/fonts/Dana/woff2/DanaFaNum-Medium.woff2")
+  src: local("DanaMedium"), url("../fonts/Dana/woff2/DanaFaNum-Medium.woff2")
          format("woff2");
 
   font-display: swap;
@@ -470,36 +470,36 @@ video {
 
   /* 600 */
 
-  src: url("../public/fonts/Dana/woff2/DanaFaNum-DemiBold.woff2")
+  src: local("DanaDemiBold"), url("../fonts/Dana/woff2/DanaFaNum-DemiBold.woff2")
          format("woff2");
 
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Morabba Light";
+  font-family: "MorabbaLight";
 
-  src: url("../public/fonts/Morabba/woff2/Morabba-Light.woff2")
+  src: local("MorabbaLight"), url("../fonts/Morabba/woff2/Morabba-Light.woff2")
          format("woff2");
 
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Morabba Meduium";
+  font-family: "MorabbaMeduium";
 
-  src: local("Morabba Meduium"),
-         url("../public/fonts/Morabba/woff2/Morabba-Light.woff2")
+  src: local("MorabbaMeduium"), local("Morabba Meduium"),
+         url("../fonts/Morabba/woff2/Morabba-Medium.woff2")
             format("woff2");
 
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Morabba Bold";
+  font-family: "MorabbaBold";
 
-  src: local("Morabba Bold"),
-         url("../public/fonts/Morabba/woff2/Morabba-Bold.woff2") format("woff2");
+  src: local("MorabbaBold"), local("Morabba Bold"),
+         url("../fonts/Morabba/woff2/Morabba-Bold.woff2") format("woff2");
 
   font-display: swap;
 }
@@ -881,6 +881,10 @@ body {
   font-family: Dana;
 }
 
+.font-DanaDemiBold {
+  font-family: DanaDemiBold;
+}
+
 .font-DanaMedium {
   font-family: DanaMedium;
 }
@@ -903,10 +907,6 @@ body {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.leading-\[56px\] {
-  line-height: 56px;
 }
 
 .tracking-normal {
@@ -977,6 +977,10 @@ body {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.delay-75 {
+  transition-delay: 75ms;
 }
 
 .hover\:bg-emerald-600:hover {
