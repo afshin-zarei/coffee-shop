@@ -449,7 +449,8 @@ video {
 
   /* 400 */
 
-  src: local("Dana"), url("../fonts/Dana/woff2/DanaFaNum-Regular.woff2") format("woff2");
+  src: local("Dana"),
+         url("../fonts/Dana/woff2/DanaFaNum-Regular.woff2") format("woff2");
 
   font-display: swap;
 }
@@ -459,8 +460,8 @@ video {
 
   /* 500 */
 
-  src: local("DanaMedium"), url("../fonts/Dana/woff2/DanaFaNum-Medium.woff2")
-         format("woff2");
+  src: local("DanaMedium"),
+         url("../fonts/Dana/woff2/DanaFaNum-Medium.woff2") format("woff2");
 
   font-display: swap;
 }
@@ -470,8 +471,8 @@ video {
 
   /* 600 */
 
-  src: local("DanaDemiBold"), url("../fonts/Dana/woff2/DanaFaNum-DemiBold.woff2")
-         format("woff2");
+  src: local("DanaDemiBold"),
+         url("../fonts/Dana/woff2/DanaFaNum-DemiBold.woff2") format("woff2");
 
   font-display: swap;
 }
@@ -479,8 +480,8 @@ video {
 @font-face {
   font-family: "MorabbaLight";
 
-  src: local("MorabbaLight"), url("../fonts/Morabba/woff2/Morabba-Light.woff2")
-         format("woff2");
+  src: local("MorabbaLight"),
+         url("../fonts/Morabba/woff2/Morabba-Light.woff2") format("woff2");
 
   font-display: swap;
 }
@@ -489,8 +490,7 @@ video {
   font-family: "MorabbaMeduium";
 
   src: local("MorabbaMeduium"), local("Morabba Meduium"),
-         url("../fonts/Morabba/woff2/Morabba-Medium.woff2")
-            format("woff2");
+         url("../fonts/Morabba/woff2/Morabba-Medium.woff2") format("woff2");
 
   font-display: swap;
 }
@@ -851,6 +851,11 @@ body {
   padding: 1.25rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -863,14 +868,6 @@ body {
 
 .pb-\[27px\] {
   padding-bottom: 27px;
-}
-
-.pl-4 {
-  padding-left: 1rem;
-}
-
-.pr-10 {
-  padding-right: 2.5rem;
 }
 
 .pt-\[21px\] {
@@ -1023,8 +1020,8 @@ body {
   transition-duration: 150ms;
 }
 
-.child-hover\:font-medium > *:hover {
-  font-weight: 500;
+.child-hover\:font-DanaMedium > *:hover {
+  font-family: DanaMedium;
 }
 
 .child-hover\:text-orange-300 > *:hover {
