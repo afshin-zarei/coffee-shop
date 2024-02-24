@@ -659,6 +659,14 @@ body {
   margin-top: 1.25rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -696,6 +704,22 @@ body {
 
 .h-8 {
   height: 2rem;
+}
+
+.max-h-96 {
+  max-height: 24rem;
+}
+
+.max-h-9 {
+  max-height: 2.25rem;
+}
+
+.max-h-80 {
+  max-height: 20rem;
+}
+
+.max-h-60 {
+  max-height: 15rem;
 }
 
 .w-30 {
@@ -799,6 +823,14 @@ body {
   border-color: rgb(243 244 246 / var(--tw-divide-opacity));
 }
 
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -866,12 +898,29 @@ body {
   padding-bottom: 1.25rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .pb-\[27px\] {
   padding-bottom: 27px;
 }
 
 .pt-\[21px\] {
   padding-top: 21px;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
 }
 
 .font-Dana {
