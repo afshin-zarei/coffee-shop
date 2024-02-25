@@ -94,18 +94,18 @@
       </svg>
 
       <header
-         class="font-Dana fixed top-9 right-0 left-0 flex items-center w-[90%] h-24 mx-auto py-5 px-10 bg-black/50 rounded-3xl backdrop-blur-[6px]"
+         class="font-Dana fixed top-9 right-0 left-0 lg:flex items-center md:w-[98%] lg:w-[90%] h-24 mx-auto py-5 px-5 lg:px-10 bg-black/50 rounded-3xl backdrop-blur-[6px]"
       >
          <div class="flex justify-between items-center w-full">
             <!-- Logo & Menu -->
-            <nav class="flex items-center gap-x-9">
+            <nav class="flex items-center gap-7 lg:gap-x-9">
                <!-- Logo -->
-               <div>
+               <div class="shrink-0">
                   <img src="./images/app-logo.png" alt="logo" />
                </div>
                <!-- Menu -->
                <ul
-                  class="h-14 flex gap-x-9 text-xl text-gray-300 tracking-tightest child:leading-[56px]"
+                  class="h-14 flex gap-x-5 lg:gap-x-7 xl:gap-x-9 text-xl text-gray-300 tracking-tightest child:leading-[56px]"
                >
                   <li class="font-DanaMedium text-orange-200">
                      <a href="#">صفحه اصلی</a>
@@ -136,9 +136,9 @@
                </ul>
             </nav>
             <!-- Cart & Theme Toggle, Login Link -->
-            <div class="flex gap-x-10 text-orange-200">
+            <div class="flex gap-x-4 lg:gap-x-5 xl:gap-x-10 text-orange-200">
                <!-- Cart Icon & Theme Switch Btn -->
-               <div class="flex items-center gap-x-5">
+               <div class="flex items-center gap-x-4">
                   <!-- Card -->
                   <div class="relative group">
                      <!-- Card Icon Hover -->
@@ -276,7 +276,7 @@
                      </div>
                   </div>
 
-                  <!-- Theme Switch Btn -->
+                  <!-- Theme Switch Btn & Theme Toggle -->
                   <div id="toggle-theme" class="cursor-pointer">
                      <svg class="w-8 h-8 dark:hidden">
                         <use href="#moon"></use>
@@ -292,7 +292,7 @@
                   <svg class="w-8 h-8">
                      <use href="#arrow-right-end-on-rectangle"></use>
                   </svg>
-                  <span class="text-xl inline-block">
+                  <span class="text-xl hidden xl:inline-block">
                      <span class="tracking-tightest">ورود</span>
                      <span>|</span>
                      <span class="tracking-tightest">ثبت‌نام</span>
