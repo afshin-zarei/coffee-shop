@@ -525,7 +525,7 @@
          </div>
          <!-- Nav -->
          <div
-            class="w-64 min-h-screen px-4 pt-3 fixed top-0 right-0 bg-white dark:bg-zinc-700 z-20"
+            class="w-64 min-h-screen px-4 pt-3 fixed top-0 -right-64 bg-white dark:bg-zinc-700 z-20"
          >
             <!-- Nav Header -->
             <div
@@ -551,7 +551,7 @@
             <!-- Nav Menu -->
 
             <ul
-               class="child:pr-2.5 pt-6 space-y-6 text-zinc-600 dark:text-white"
+               class="child:pr-2.5 pt-6 space-y-6 text-zinc-700 dark:text-white"
             >
                <li
                   class="flex items-center h-10 pr-0 -mb-2 rounded-md bg-orange-200/20 text-orange-300"
@@ -563,26 +563,29 @@
                      <span>صفحه اصلی</span>
                   </a>
                </li>
-               <li class="flex justify-between">
-                  <a href="#" class="flex gap-2">
-                     <svg class="w-5 h-5">
-                        <use href="#shopping-bag"></use>
-                     </svg>
-                     <span>فروشگاه</span>
-                     <!-- <ul>
-                           <li><a href="#"></a></li>
-                           <li><a href="#"></a></li>
-                           <li><a href="#"></a></li>
-                           <li><a href="#"></a></li>
-                           <li><a href="#"></a></li>
-                           <li><a href="#"></a></li>
-                        </ul> -->
-                  </a>
-                  <span>
-                     <svg class="w-4 h-4">
-                        <use href="#chevron-down"></use>
-                     </svg>
-                  </span>
+               <li>
+                  <div class="flex justify-between">
+                     <a href="#" class="flex gap-2">
+                        <svg class="w-5 h-5">
+                           <use href="#shopping-bag"></use>
+                        </svg>
+                        <span>فروشگاه</span>
+                     </a>
+                     <div class="submenu-open-btn">
+                        <svg class="w-4 h-4">
+                           <use href="#chevron-down"></use>
+                        </svg>
+                     </div>
+                     
+                  </div>
+                  <ul class="submenu">
+                     <li><a href="#">قهوه ویژه</a></li>
+                     <li><a href="#" class="submenu__item--active">ویژه در سطح جهانی</a></li>
+                     <li><a href="#">قهوه درجه یک</a></li>
+                     <li><a href="#">ترکیبات تجاری</a></li>
+                     <li><a href="#">کپسول قهوه</a></li>
+                     <li><a href="#">قهوه زینو برزیلی</a></li>
+                  </ul>
                </li>
                <li>
                   <a href="#" class="flex gap-2">
@@ -669,7 +672,7 @@
 
       <!-- transparent box  -->
       <div
-         class="ovarly fixed md:hidden inset-0 w-full h-full bg-black/40 z-10"
+         class="ovarly fixed -right-[769px] md:hidden inset-0 w-full h-full bg-black/40 z-10"
       ></div>
       <script src="scripts/app.js"></script>
    </body>
