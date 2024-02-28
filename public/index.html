@@ -518,14 +518,14 @@
          class="flex md:hidden items-center justify-between h-16 px-4 bg-white dark:bg-zinc-700"
       >
          <!-- Nav Icon -->
-         <div>
+         <div class="nav-icon">
             <svg class="w-6 h-6 text-zinc-700 dark:text-white">
                <use class="" href="#bars-3"></use>
             </svg>
          </div>
          <!-- Nav -->
          <div
-            class="w-64 min-h-screen px-4 pt-3 fixed top-0 -right-64 bg-white dark:bg-zinc-700 z-20"
+            class="nav w-64 min-h-screen px-4 pt-3 fixed top-0 -right-64 bg-white dark:bg-zinc-700 z-20 transition-all"
          >
             <!-- Nav Header -->
             <div
@@ -564,7 +564,7 @@
                   </a>
                </li>
                <li>
-                  <div class="flex justify-between">
+                  <div class="flex justify-between transition-colors">
                      <a href="#" class="flex gap-2">
                         <svg class="w-5 h-5">
                            <use href="#shopping-bag"></use>
@@ -572,7 +572,7 @@
                         <span>فروشگاه</span>
                      </a>
                      <div class="submenu-open-btn">
-                        <svg class="w-4 h-4">
+                        <svg class="w-4 h-4 transition-transform">
                            <use href="#chevron-down"></use>
                         </svg>
                      </div>
@@ -672,7 +672,7 @@
 
       <!-- transparent box  -->
       <div
-         class="ovarly fixed -right-[769px] md:hidden inset-0 w-full h-full bg-black/40 z-10"
+         class="overlay"
       ></div>
       <script src="scripts/app.js"></script>
    </body>
