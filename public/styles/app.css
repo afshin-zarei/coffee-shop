@@ -728,8 +728,20 @@ body {
   top: 100%;
 }
 
+.bottom-6 {
+  bottom: 1.5rem;
+}
+
+.bottom-8 {
+  bottom: 2rem;
+}
+
 .z-20 {
   z-index: 20;
+}
+
+.m-5 {
+  margin: 1.25rem;
 }
 
 .mx-auto {
@@ -820,6 +832,14 @@ body {
   height: 100vh;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-11 {
+  height: 2.75rem;
+}
+
 .max-h-60 {
   max-height: 15rem;
 }
@@ -876,6 +896,18 @@ body {
   width: 1px;
 }
 
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-28 {
+  width: 7rem;
+}
+
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -923,6 +955,10 @@ body {
 
 .gap-7 {
   gap: 1.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-x-2 {
@@ -1108,6 +1144,10 @@ body {
   padding-top: 0.75rem;
 }
 
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
 .pt-6 {
   padding-top: 1.5rem;
 }
@@ -1116,8 +1156,12 @@ body {
   padding-top: 21px;
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .font-Dana {
@@ -1150,6 +1194,23 @@ body {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-\[11px\] {
+  font-size: 11px;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
+}
+
+.text-\[1px\] {
+  font-size: 1px;
 }
 
 .tracking-normal {
