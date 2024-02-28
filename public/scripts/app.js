@@ -6,6 +6,12 @@ const navCloseBtn = document.querySelector(".nav-close-btn");
 const nav =document.querySelector(".nav")
 const overlay = document.querySelector(".overlay");
 
+function closeMobileMenu() {
+   nav.classList.remove("right-0");
+   nav.classList.add("-right-64");
+   overlay.classList.remove("overlay--visible");
+}
+
 toggleThemeBtns.forEach((btn) => {
    btn.addEventListener("click", () => {
       if (localStorage.theme === "dark") {
@@ -30,9 +36,6 @@ navOpenBtn.addEventListener("click", () => {
    overlay.classList.add("overlay--visible");
 });
 
-navCloseBtn.addEventListener("click", ()=>{
-   nav.classList.remove("right-0");
-   nav.classList.add("-right-64");
-   overlay.classList.remove("overlay--visible");
+navCloseBtn.addEventListener("click", closeMobileMenu);
 
-})
+overlay.addEventListener("click", closeMobileMenu)
