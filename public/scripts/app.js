@@ -2,6 +2,7 @@ const toggleThemeBtns = document.querySelectorAll(".toggle-theme");
 const submenuOpenBtn = document.querySelector(".submenu-open-btn");
 const submenu = document.querySelector(".submenu");
 const navOpenBtn = document.querySelector(".nav-icon");
+const navCloseBtn = document.querySelector(".nav-close-btn");
 const nav =document.querySelector(".nav")
 const overlay = document.querySelector(".overlay");
 
@@ -29,3 +30,9 @@ navOpenBtn.addEventListener("click", () => {
    overlay.classList.add("overlay--visible");
 });
 
+navCloseBtn.addEventListener("click", ()=>{
+   nav.classList.remove("right-0");
+   nav.classList.add("-right-64");
+   overlay.classList.remove("overlay--visible");
+
+})
