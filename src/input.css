@@ -46,3 +46,29 @@
       background-size: cover;
    }
 }
+
+@layer components {
+   .submenu {
+      @apply hidden child:pr-7 space-y-3 mt-3 text-sm text-zinc-600 dark:text-white;
+   }
+   .submenu--open {
+      @apply flex flex-col;
+   }
+   .submenu__item--active {
+      @apply relative pr-2.5 text-orange-300;
+   }
+   .submenu__item--active::after {
+      content: "";
+      display: block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: #fdba74;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+
+   }
+}
