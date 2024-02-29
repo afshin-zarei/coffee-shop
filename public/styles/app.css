@@ -688,6 +688,10 @@ body {
   opacity: 1;
 }
 
+.cart-body-mobile {
+  height: calc(100vh - 176px);
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -706,6 +710,10 @@ body {
 
 .-right-64 {
   right: -16rem;
+}
+
+.bottom-8 {
+  bottom: 2rem;
 }
 
 .left-0 {
@@ -728,20 +736,8 @@ body {
   top: 100%;
 }
 
-.bottom-6 {
-  bottom: 1.5rem;
-}
-
-.bottom-8 {
-  bottom: 2rem;
-}
-
 .z-20 {
   z-index: 20;
-}
-
-.m-5 {
-  margin: 1.25rem;
 }
 
 .mx-auto {
@@ -796,6 +792,10 @@ body {
   height: 2.5rem;
 }
 
+.h-11 {
+  height: 2.75rem;
+}
+
 .h-14 {
   height: 3.5rem;
 }
@@ -828,20 +828,20 @@ body {
   height: 2rem;
 }
 
+.h-\[90px\] {
+  height: 90px;
+}
+
 .h-screen {
   height: 100vh;
 }
 
-.h-1 {
-  height: 0.25rem;
-}
-
-.h-11 {
-  height: 2.75rem;
-}
-
 .max-h-60 {
   max-height: 15rem;
+}
+
+.w-28 {
+  width: 7rem;
 }
 
 .w-30 {
@@ -888,24 +888,16 @@ body {
   width: 41px;
 }
 
+.w-\[90px\] {
+  width: 90px;
+}
+
 .w-full {
   width: 100%;
 }
 
 .w-px {
   width: 1px;
-}
-
-.w-3 {
-  width: 0.75rem;
-}
-
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-28 {
-  width: 7rem;
 }
 
 .shrink-0 {
@@ -957,8 +949,9 @@ body {
   gap: 1.75rem;
 }
 
-.gap-4 {
-  gap: 1rem;
+.gap-x-1 {
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem;
 }
 
 .gap-x-2 {
@@ -1156,14 +1149,6 @@ body {
   padding-top: 21px;
 }
 
-.pb-6 {
-  padding-bottom: 1.5rem;
-}
-
-.text-right {
-  text-align: right;
-}
-
 .font-Dana {
   font-family: Dana;
 }
@@ -1194,23 +1179,6 @@ body {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-\[11px\] {
-  font-size: 11px;
-}
-
-.text-\[10px\] {
-  font-size: 10px;
-}
-
-.text-\[1px\] {
-  font-size: 1px;
 }
 
 .tracking-normal {
@@ -1320,6 +1288,20 @@ body {
   display: inline-block;
 }
 
+.child\:border-b > * {
+  border-bottom-width: 1px;
+}
+
+.child\:border-b-gray-100 > * {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(243 244 246 / var(--tw-border-opacity));
+}
+
+.child\:py-5 > * {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .child\:pb-5 > * {
   padding-bottom: 1.25rem;
 }
@@ -1402,6 +1384,10 @@ body {
 :is(.dark .dark\:text-white) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+:is(.dark .child\:dark\:border-white\/10) > * {
+  border-color: rgb(255 255 255 / 0.1);
 }
 
 @media (min-width: 768px) {
