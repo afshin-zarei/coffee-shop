@@ -76,4 +76,7 @@
    .overlay--visible {
       @apply visible opacity-100;
    }
+   .cart-body-mobile {
+      height: calc(100vh - 176px);
+   }
 }
