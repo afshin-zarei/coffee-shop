@@ -98,4 +98,18 @@
       transform: translateY(0.2px);
    }
 
+   @media screen and (min-width: 1280px) {
+      html.dark .products {
+         background-image: url("../images/products-bg.png");
+      }
+   
+      .products {
+         background-image: linear-gradient(rgba(243, 244, 246, 0.65), rgba(243, 244, 246, 0.65)), url("../images/products-bg.png");
+         background-repeat: no-repeat;
+         background-size: 100%;
+      }
+   }
+
 }
+
+/* linear-gradient(rgba(243, 244, 246, 0.6), rgba(243, 244, 246, 0.6))  */
