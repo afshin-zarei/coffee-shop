@@ -774,6 +774,18 @@ video {
   transform: translateY(0.2px);
 }
 
+@media screen and (min-width: 1280px) {
+  html.dark .products {
+    background-image: url("../images/products-bg.png");
+  }
+
+  .products {
+    background-image: linear-gradient(rgba(243, 244, 246, 0.65), rgba(243, 244, 246, 0.65)), url("../images/products-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -949,6 +961,10 @@ video {
 
 .h-\[30px\] {
   height: 30px;
+}
+
+.h-\[900px\] {
+  height: 900px;
 }
 
 .h-\[90px\] {
@@ -1463,6 +1479,8 @@ video {
 .delay-75 {
   transition-delay: 75ms;
 }
+
+/* linear-gradient(rgba(243, 244, 246, 0.6), rgba(243, 244, 246, 0.6))  */
 
 .hover\:bg-emerald-600:hover {
   --tw-bg-opacity: 1;
