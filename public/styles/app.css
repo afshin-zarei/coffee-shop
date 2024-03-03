@@ -939,10 +939,6 @@ video {
   height: 2rem;
 }
 
-.h-\[2000px\] {
-  height: 2000px;
-}
-
 .h-\[200px\] {
   height: 200px;
 }
@@ -1252,11 +1248,6 @@ video {
 
 .bg-white\/20 {
   background-color: rgb(255 255 255 / 0.2);
-}
-
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-home-mobile {
