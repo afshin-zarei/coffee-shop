@@ -29,8 +29,8 @@
       font-display: swap;
    }
    @font-face {
-      font-family: "MorabbaMeduium";
-      src: local("MorabbaMeduium"), local("Morabba Meduium"),
+      font-family: "MorabbaMedium";
+      src: local("MorabbaMedium"), local("Morabba Medium"),
          url("../fonts/Morabba/woff2/Morabba-Medium.woff2") format("woff2");
       font-display: swap;
    }
@@ -98,6 +98,23 @@
       transform: translateY(0.2px);
    }
 
+   .title {
+      @apply text-zinc-700 dark:text-white;
+   }
+
+   .section-title {
+      @apply font-MorabbaMedium text-2xl md:text-5xl;
+   }
+
+   .section-subtitle {
+      @apply inline-block font-MorabbaLight text-lg md:text-3xl leading-8 md:leading-[48px] mt-0.5 md:mt-1.5;
+   }
+
+   .section-link {
+      @apply h-10 pt-[5px] pb-1.5 pl-1 pr-3 flex items-center md:gap-x-1 text-base md:text-xl tracking-tightest rounded-md text-orange-300 md:hover:bg-orange-300/20 transition-colors;
+   }
+   /* pt-[5px] pb-1.5 pl-1 pr-3 */
+
    @media screen and (min-width: 1280px) {
       html.dark .products {
          background-image: url("../images/products-bg.png");
@@ -112,4 +129,3 @@
 
 }
 
-/* linear-gradient(rgba(243, 244, 246, 0.6), rgba(243, 244, 246, 0.6))  */

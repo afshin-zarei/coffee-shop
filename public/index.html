@@ -176,21 +176,10 @@
             />
          </symbol>
 
-         <symbol
-            id="x-mark"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-         >
-            <path
-               stroke-linecap="round"
-               stroke-linejoin="round"
-               d="M6 18 18 6M6 6l12 12"
-            />
-         </symbol>
+         <symbol id="x-mark-mini" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+          </symbol>
+          
 
          <symbol
             id="home"
@@ -318,6 +307,11 @@
          <symbol id="chevron-down-mini" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
             <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
           </symbol>
+
+          <symbol id="chevron-left-mini" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+            <path fill-rule="evenodd" d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
+          </symbol>
+          
           
 
          
@@ -391,8 +385,8 @@
                            <a href="" class="flex items-center text-orange-300">
                               <span>مشاهده سبد خرید</span>
 
-                              <svg class="w-4 h-4">
-                                 <use href="#chevron-left"></use>
+                              <svg class="w-5 h-5">
+                                 <use href="#chevron-left-mini"></use>
                               </svg>
                            </a>
                         </div>
@@ -560,7 +554,7 @@
 
                <div class="nav-close-btn">
                   <svg class="w-5 h-5 text-zinc-600 dark:text-white">
-                     <use href="#x-mark"></use>
+                     <use href="#x-mark-mini"></use>
                   </svg>
                </div>
             </div>
@@ -590,7 +584,7 @@
                      </a>
                      <div class="submenu-open-btn">
                         <svg class="w-4 h-4 transition-all">
-                           <use href="#chevron-down"></use>
+                           <use href="#chevron-down-mini"></use>
                         </svg>
                      </div>
                   </div>
@@ -695,7 +689,7 @@
             >
                <div class="cart-close-btn">
                   <svg class="w-5 h-5 text-zinc-600 dark:text-white">
-                     <use href="#x-mark"></use>
+                     <use href="#x-mark-mini"></use>
                   </svg>
                </div>
                <span class="font-DanaMedium text-zinc-700 dark:text-white"
@@ -836,7 +830,23 @@
          </section>
 
          <!-- Products Main App -->
-         <section class="products h-[900px]"></section>
+         <section class="products h-[900px] pt-8 md:pt-24 lg:pt-48">
+            <div class="container">
+               <div class="flex items-end justify-between mb-5 md:mb-12">
+                  <div class="title">
+                     <h3 class="section-title ">جدیدترین محصولات</h3>
+                     <span class="section-subtitle">فرآوری شده از دانه قهوه</span>
+                  </div>
+                  <a href="#" class="section-link">
+                     <span class="hidden md:inline-block">مشاهده همه محصولات</span>
+                     <span class="inline-block md:hidden">مشاهده همه</span>
+                     <svg class="w-5 h-5">
+                        <use href="#chevron-left-mini"></use>
+                     </svg>
+                  </a>
+               </div>
+            </div>
+         </section>
 
       </main>
 
