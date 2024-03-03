@@ -4,6 +4,10 @@
 ### Node ###
 node_modules/
 node_modules
+*.vscode
+*.vscode/
+.vscode/
+.vscode
 # Logs
 logs
 *.log
