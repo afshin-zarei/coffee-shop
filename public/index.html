@@ -6,6 +6,7 @@
       <title>Coffee Shop</title>
       <link rel="stylesheet" href="./styles/app.css" />
       <link rel="icon" href="./images/fav-icon.png" type="image/png" />
+      <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
       <script>
          if (
             localStorage.theme === "dark" ||
@@ -18,7 +19,7 @@
          }
       </script>
    </head>
-   <body class="font-Dana text-gray-100 dark:bg-zinc-800">
+   <body class="font-Dana bg-gray-100 dark:bg-zinc-800">
       <!-- All App Icons -->
       <svg class="hidden">
          <symbol id="shopping-cart"
@@ -1277,10 +1278,371 @@
          </div>
          </section>
 
+         <!-- Best Selling Products -->
+         <section class="mb-8 md:mb-20">
+            <div class="container">
+               <!-- Head Best Selling Products -->
+               <div class="flex justify-between items-end mb-5 md:mb-12">
+                  <div>
+                     <h3 class="section-title">محصولات پر فروش</h3>
+                     <span class="section-subtitle">پیشنهاد قهوه خور ها ...</span>
+                  </div>
+
+                  <div class="flex gap-x-3 md:gap-x-[18px] child:w-9 child:md:w-11 child:h-9 child:md:h-11 child:rounded-full child:flex-center child:bg-white child:dark:bg-zinc-700 child:text-zinc-700 child:dark:text-white child:shadow-normal child-hover:bg-gray-300 dark:child-hover:bg-white dark:child-hover:text-zinc-700 child:transition-all">
+                     <span class="swiper-button-prev-custom">
+                        <svg class="w-5 h-5 md:w-[26px] md:h-[26px] rotate-180">
+                           <use href="#chevron-left-mini"></use>
+                        </svg>
+                     </span>
+                     <span class="swiper-button-next-custom">
+                        <svg class="w-5 h-5 md:w-[26px] md:h-[26px]">
+                           <use href="#chevron-left-mini"></use>
+                        </svg>
+                     </span>
+                  </div>
+               </div>
+
+               <!-- Slider main container -->
+               <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                  <!-- Slides -->
+                     <div class="swiper-slide">
+                        <div class="p-2 md:p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal">
+                           <div class="relative mb-2 md:mb-5">
+                              <img src="./images/products/p7.png" class="w-32 h-32 md:w-auto md:h-auto mx-auto" alt="product 7" loading="lazy">
+                              <span class="absolute top-1 right-1 block h-5 md:h-7.5 rounded-full px-2.5 md:px-3.5 text-xs/6 md:text-base/[34px] font-DanaDemiBold bg-orange-300 text-white dark:text-zinc-700 ">40%</span>
+                           </div>
+                           <h5 class="font-DanaMedium h-10 md:h-14 text-sm md:text-xl text-zinc-700 dark:text-white line-clamp-2">قهوه ترک بن مانو مقدار 250 گرم
+                              خط دوم اسم طولانی
+                           </h5>
+                           <div class="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
+                              <div class="text-teal-600 dark:text-emerald-500">
+                                 <span class="font-DanaDemiBold md:text-xl">144,000</span>
+                                 <span class="text-xs md:text-sm tracking-tighter">تومان</span>
+                              </div>
+                              <div class="offer">
+                                 <span class="text-xs md:text-xl">240,000</span>
+                                 <span class="hidden xl:inline text-sm tracking-tighter">تومان</span>
+                              </div>
+                           </div>
+                           <div class="flex justify-between items-center mt-2.5 md:mt-4">
+                              <div class="flex items-center gap-x-2.5 md:gap-x-3">
+                                 <span class="flex-center w-[26px] h-[26px] md:w-9 md:h-9 rounded-full bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 text-gray-400 hover:text-white cursor-pointer transition-all">
+                                    <svg class="w-4 h-4 md:w-[22px] md:h-[22px]">
+                                       <use href="#shopping-cart"></use>
+                                    </svg>
+                                 </span>
+                                 <span class="block rounded-full text-gray-400 hover:text-teal-600 dark:hover:text-emerald-500 cursor-pointer transition-all">
+                                    <svg class="w-4 h-4 md:w-6 md:h-6">
+                                       <use href="#arrows-right-left"></use>
+                                    </svg>
+                                 </span>
+                              </div>
+                              <div class="flex gap-0 text-yellow-400">
+                                 <svg class="w-4 h-4 md:w-6 md:h-6 text-gray-300 dark:text-gray-400">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6 text-gray-300 dark:text-gray-400">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6 text-gray-300 dark:text-gray-400">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="p-2 md:p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal">
+                           <div class="mb-2 md:mb-5">
+                              <img src="./images/products/p6.png" class="w-32 h-32 md:w-auto md:h-auto mx-auto" alt="product 6" loading="lazy">
+                           </div>
+                           <h5 class="font-DanaMedium h-10 md:h-14 text-sm md:text-xl text-zinc-700 dark:text-white line-clamp-2">قهوه ترک بن مانو مقدار 250 گرم
+                              خط دوم اسم طولانی
+                           </h5>
+                           <div class="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
+                              <div class="text-teal-600 dark:text-emerald-500">
+                                 <span class="font-DanaDemiBold md:text-xl">99,000</span>
+                                 <span class="text-xs md:text-sm tracking-tighter">تومان</span>
+                              </div>
+                              <div class="offer hidden">
+                                 <span class="text-xs md:text-xl">175,000</span>
+                                 <span class="hidden xl:inline text-sm tracking-tighter">تومان</span>
+                              </div>
+                           </div>
+                           <div class="flex justify-between items-center mt-2.5 md:mt-4">
+                              <div class="flex items-center gap-x-2.5 md:gap-x-3">
+                                 <span class="flex-center w-[26px] h-[26px] md:w-9 md:h-9 rounded-full bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 text-gray-400 hover:text-white cursor-pointer transition-all">
+                                    <svg class="w-4 h-4 md:w-[22px] md:h-[22px]">
+                                       <use href="#shopping-cart"></use>
+                                    </svg>
+                                 </span>
+                                 <span class="block rounded-full text-gray-400 hover:text-teal-600 dark:hover:text-emerald-500 cursor-pointer transition-all">
+                                    <svg class="w-4 h-4 md:w-6 md:h-6">
+                                       <use href="#arrows-right-left"></use>
+                                    </svg>
+                                 </span>
+                              </div>
+                              <div class="flex gap-0 text-yellow-400">
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="p-2 md:p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal">
+                           <div class="relative mb-2 md:mb-5">
+                              <img src="./images/products/p5.png" class="w-32 h-32 md:w-auto md:h-auto mx-auto" alt="product 5" loading="lazy">
+                              <span class="absolute top-1 right-1 block h-5 md:h-7.5 rounded-full px-2.5 md:px-3.5 text-xs/6 md:text-base/[34px] font-DanaDemiBold bg-orange-300 text-white dark:text-zinc-700 ">25%</span>
+                           </div>
+                           <h5 class="font-DanaMedium h-10 md:h-14 text-sm md:text-xl text-zinc-700 dark:text-white line-clamp-2">قهوه ترک بن مانو مقدار 250 گرم
+                              خط دوم اسم طولانی
+                           </h5>
+                           <div class="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
+                              <div class="text-teal-600 dark:text-emerald-500">
+                                 <span class="font-DanaDemiBold md:text-xl">390,000</span>
+                                 <span class="text-xs md:text-sm tracking-tighter">تومان</span>
+                              </div>
+                              <div class="offer">
+                                 <span class="text-xs md:text-xl">520,000</span>
+                                 <span class="hidden xl:inline text-sm tracking-tighter">تومان</span>
+                              </div>
+                           </div>
+                           <div class="flex justify-between items-center mt-2.5 md:mt-4">
+                              <div class="flex items-center gap-x-2.5 md:gap-x-3">
+                                 <span class="flex-center w-[26px] h-[26px] md:w-9 md:h-9 rounded-full bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 text-gray-400 hover:text-white cursor-pointer transition-all">
+                                    <svg class="w-4 h-4 md:w-[22px] md:h-[22px]">
+                                       <use href="#shopping-cart"></use>
+                                    </svg>
+                                 </span>
+                                 <span class="block rounded-full text-gray-400 hover:text-teal-600 dark:hover:text-emerald-500 cursor-pointer transition-all">
+                                    <svg class="w-4 h-4 md:w-6 md:h-6">
+                                       <use href="#arrows-right-left"></use>
+                                    </svg>
+                                 </span>
+                              </div>
+                              <div class="flex gap-0 text-yellow-400">
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="p-2 md:p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal">
+                           <div class="mb-2 md:mb-5">
+                              <img src="./images/products/p3.png" class="w-32 h-32 md:w-auto md:h-auto mx-auto" alt="product 3" loading="lazy">
+                           </div>
+                           <h5 class="font-DanaMedium h-10 md:h-14 text-sm md:text-xl text-zinc-700 dark:text-white line-clamp-2">قهوه ترک بن مانو مقدار 250 گرم
+                              خط دوم اسم طولانی
+                           </h5>
+                           <div class="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
+                              <div class="text-teal-600 dark:text-emerald-500">
+                                 <span class="font-DanaDemiBold md:text-xl">345,000</span>
+                                 <span class="text-xs md:text-sm tracking-tighter">تومان</span>
+                              </div>
+                           </div>
+                           <div class="flex justify-between items-center mt-2.5 md:mt-4">
+                              <div class="flex items-center gap-x-2.5 md:gap-x-3">
+                                 <span class="flex-center w-[26px] h-[26px] md:w-9 md:h-9 rounded-full bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 text-gray-400 hover:text-white cursor-pointer transition-all">
+                                    <svg class="w-4 h-4 md:w-[22px] md:h-[22px]">
+                                       <use href="#shopping-cart"></use>
+                                    </svg>
+                                 </span>
+                                 <span class="block rounded-full text-gray-400 hover:text-teal-600 dark:hover:text-emerald-500 cursor-pointer transition-all">
+                                    <svg class="w-4 h-4 md:w-6 md:h-6">
+                                       <use href="#arrows-right-left"></use>
+                                    </svg>
+                                 </span>
+                              </div>
+                              <div class="flex gap-0 text-yellow-400">
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="p-2 md:p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal">
+                           <div class="mb-2 md:mb-5">
+                              <img src="./images/products/p2.png" class="w-32 h-32 md:w-auto md:h-auto mx-auto" alt="product 2" loading="lazy">
+                           </div>
+                           <h5 class="font-DanaMedium h-10 md:h-14 text-sm md:text-xl text-zinc-700 dark:text-white line-clamp-2">قهوه ترک بن مانو مقدار 250 گرم
+                              خط دوم اسم طولانی
+                           </h5>
+                           <div class="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
+                              <div class="text-teal-600 dark:text-emerald-500">
+                                 <span class="font-DanaDemiBold md:text-xl">270,000</span>
+                                 <span class="text-xs md:text-sm tracking-tighter">تومان</span>
+                              </div>
+                           </div>
+                           <div class="flex justify-between items-center mt-2.5 md:mt-4">
+                              <div class="flex items-center gap-x-2.5 md:gap-x-3">
+                                 <span class="flex-center w-[26px] h-[26px] md:w-9 md:h-9 rounded-full bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 text-gray-400 hover:text-white cursor-pointer transition-all">
+                                    <svg class="w-4 h-4 md:w-[22px] md:h-[22px]">
+                                       <use href="#shopping-cart"></use>
+                                    </svg>
+                                 </span>
+                                 <span class="block rounded-full text-gray-400 hover:text-teal-600 dark:hover:text-emerald-500 cursor-pointer transition-all">
+                                    <svg class="w-4 h-4 md:w-6 md:h-6">
+                                       <use href="#arrows-right-left"></use>
+                                    </svg>
+                                 </span>
+                              </div>
+                              <div class="flex gap-0 text-yellow-400">
+                                 <svg class="w-4 h-4 md:w-6 md:h-6 text-gray-300 dark:text-gray-400">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6 text-gray-300 dark:text-gray-400">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="p-2 md:p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal">
+                           <div class="relative mb-2 md:mb-5">
+                              <img src="./images/products/p1.png" class="w-32 h-32 md:w-auto md:h-auto mx-auto" alt="product 1" loading="lazy">
+                              <span class="absolute top-1 right-1 block h-5 md:h-7.5 rounded-full px-2.5 md:px-3.5 text-xs/6 md:text-base/[34px] font-DanaDemiBold bg-orange-300 text-white dark:text-zinc-700 ">12%</span>
+                           </div>
+                           <h5 class="font-DanaMedium h-10 md:h-14 text-sm md:text-xl text-zinc-700 dark:text-white line-clamp-2">قهوه ترک بن مانو مقدار 250 گرم
+                              خط دوم اسم طولانی
+                           </h5>
+                           <div class="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
+                              <div class="text-teal-600 dark:text-emerald-500">
+                                 <span class="font-DanaDemiBold md:text-xl">154,000</span>
+                                 <span class="text-xs md:text-sm tracking-tighter">تومان</span>
+                              </div>
+                              <div class="offer">
+                                 <span class="text-xs md:text-xl">175,000</span>
+                                 <span class="hidden xl:inline text-sm tracking-tighter">تومان</span>
+                              </div>
+                           </div>
+                           <div class="flex justify-between items-center mt-2.5 md:mt-4">
+                              <div class="flex items-center gap-x-2.5 md:gap-x-3">
+                                 <span class="flex-center w-[26px] h-[26px] md:w-9 md:h-9 rounded-full bg-gray-100 hover:bg-teal-600 dark:bg-zinc-800 dark:hover:bg-emerald-500 text-gray-400 hover:text-white cursor-pointer transition-all">
+                                    <svg class="w-4 h-4 md:w-[22px] md:h-[22px]">
+                                       <use href="#shopping-cart"></use>
+                                    </svg>
+                                 </span>
+                                 <span class="block rounded-full text-gray-400 hover:text-teal-600 dark:hover:text-emerald-500 cursor-pointer transition-all">
+                                    <svg class="w-4 h-4 md:w-6 md:h-6">
+                                       <use href="#arrows-right-left"></use>
+                                    </svg>
+                                 </span>
+                              </div>
+                              <div class="flex gap-0 text-yellow-400">
+                                 <svg class="w-4 h-4 md:w-6 md:h-6 text-gray-300 dark:text-gray-400">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                                 <svg class="w-4 h-4 md:w-6 md:h-6">
+                                    <use href="#star"></use>
+                                 </svg>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </section>
+
       </main>
 
       <!-- transparent box  -->
       <div class="overlay"></div>
       <script src="scripts/app.js"></script>
+      <script src="./scripts/swiper-bundle.min.js"></script>
+      <script>
+         const swiper = new Swiper(".swiper", {
+           slidesPerView: 2,
+           spaceBetween: 14,
+            navigation: {
+               nextEl: '.swiper-button-next-custom',
+               prevEl: '.swiper-button-prev-custom',
+            },
+            breakpoints: {
+               640: {
+               slidesPerView: 3,
+               spaceBetween: 14,
+               },
+               768: {
+               slidesPerView: 3,
+               spaceBetween: 20,
+               },
+               1024: {
+               slidesPerView: 4,
+               spaceBetween: 20,
+               },
+            },
+         });
+       </script>
    </body>
 </html>

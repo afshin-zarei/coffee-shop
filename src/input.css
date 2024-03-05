@@ -103,11 +103,11 @@
    }
 
    .section-title {
-      @apply font-MorabbaMedium text-2xl md:text-5xl;
+      @apply font-MorabbaMedium text-2xl md:text-5xl text-zinc-700 dark:text-white;
    }
 
    .section-subtitle {
-      @apply inline-block font-MorabbaLight text-lg md:text-3xl leading-8 md:leading-[48px] mt-0.5 md:mt-1.5;
+      @apply inline-block font-MorabbaLight text-lg md:text-3xl leading-8 md:leading-[48px] mt-0.5 md:mt-1.5  text-zinc-700 dark:text-white;
    }
 
    .section-link {
@@ -124,7 +124,7 @@
       height: 1px;
       position: absolute;
       inset: 0;
-      top: -2px;
+      top: 0;
       margin: auto;
       background-color: #ef4444;
    }
@@ -139,7 +139,12 @@
       background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.6) 33.85%, rgba(0, 0, 0, 0.6) 100%) , url("../images/categories/category-left.jpg");
       background-repeat: no-repeat;
       background-size: cover;
+   }
 
+   @media  screen and (min-width:768px) {
+      .offer::after {
+         top: -2px;
+      }
    }
 
    @media screen and (min-width: 1280px) {
