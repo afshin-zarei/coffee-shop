@@ -788,6 +788,13 @@ video {
   font-family: MorabbaMedium;
   font-size: 1.5rem;
   line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(63 63 70 / var(--tw-text-opacity));
+}
+
+:is(.dark .section-title) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
@@ -803,6 +810,13 @@ video {
   font-family: MorabbaLight;
   font-size: 1.125rem;
   line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(63 63 70 / var(--tw-text-opacity));
+}
+
+:is(.dark .section-subtitle) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
@@ -1032,10 +1046,6 @@ video {
   display: inline-block;
 }
 
-.inline {
-  display: inline;
-}
-
 .flex {
   display: flex;
 }
@@ -1070,10 +1080,6 @@ video {
 
 .h-24 {
   height: 6rem;
-}
-
-.h-25 {
-  height: 6.25rem;
 }
 
 .h-30 {
@@ -1138,10 +1144,6 @@ video {
 
 .max-h-60 {
   max-height: 15rem;
-}
-
-.w-25 {
-  width: 6.25rem;
 }
 
 .w-28 {
@@ -1235,6 +1237,11 @@ video {
 
 .-rotate-180 {
   --tw-rotate: -180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-180 {
+  --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1781,12 +1788,20 @@ video {
   display: flex;
 }
 
+.child\:h-9 > * {
+  height: 2.25rem;
+}
+
 .child\:h-\[142px\] > * {
   height: 142px;
 }
 
 .child\:w-25 > * {
   width: 6.25rem;
+}
+
+.child\:w-9 > * {
+  width: 2.25rem;
 }
 
 .child\:flex-col > * {
@@ -1807,6 +1822,10 @@ video {
 
 .child\:rounded-2xl > * {
   border-radius: 1rem;
+}
+
+.child\:rounded-full > * {
+  border-radius: 9999px;
 }
 
 .child\:border-b > * {
@@ -1860,10 +1879,32 @@ video {
   line-height: 56px;
 }
 
+.child\:text-zinc-700 > * {
+  --tw-text-opacity: 1;
+  color: rgb(63 63 70 / var(--tw-text-opacity));
+}
+
+.child\:shadow-normal > * {
+  --tw-shadow: 0 1px 10px rgba(0,0,0,0.05);
+  --tw-shadow-colored: 0 1px 10px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .child\:transition-all > * {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.child\:flex-center > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.child-hover\:bg-gray-300 > *:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .child-hover\:font-DanaMedium > *:hover {
@@ -1956,6 +1997,21 @@ video {
 :is(.dark .child\:dark\:bg-zinc-700) > * {
   --tw-bg-opacity: 1;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
+}
+
+:is(.dark .child\:dark\:text-white) > * {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:child-hover\:bg-white > *:hover) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:child-hover\:text-zinc-700 > *:hover) {
+  --tw-text-opacity: 1;
+  color: rgb(63 63 70 / var(--tw-text-opacity));
 }
 
 @media (min-width: 480px) {
@@ -2057,6 +2113,10 @@ video {
     height: 22px;
   }
 
+  .md\:h-\[26px\] {
+    height: 26px;
+  }
+
   .md\:h-auto {
     height: auto;
   }
@@ -2075,6 +2135,10 @@ video {
 
   .md\:w-\[22px\] {
     width: 22px;
+  }
+
+  .md\:w-\[26px\] {
+    width: 26px;
   }
 
   .md\:w-\[98\%\] {
@@ -2114,6 +2178,11 @@ video {
   .md\:gap-x-3 {
     -moz-column-gap: 0.75rem;
          column-gap: 0.75rem;
+  }
+
+  .md\:gap-x-\[18px\] {
+    -moz-column-gap: 18px;
+         column-gap: 18px;
   }
 
   .md\:bg-home-desktop {
@@ -2178,8 +2247,16 @@ video {
     line-height: 1.5rem;
   }
 
+  .child\:md\:h-11 > * {
+    height: 2.75rem;
+  }
+
   .child\:md\:h-\[248px\] > * {
     height: 248px;
+  }
+
+  .child\:md\:w-11 > * {
+    width: 2.75rem;
   }
 
   .child\:md\:w-50 > * {

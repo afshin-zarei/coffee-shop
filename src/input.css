@@ -103,11 +103,11 @@
    }
 
    .section-title {
-      @apply font-MorabbaMedium text-2xl md:text-5xl;
+      @apply font-MorabbaMedium text-2xl md:text-5xl text-zinc-700 dark:text-white;
    }
 
    .section-subtitle {
-      @apply inline-block font-MorabbaLight text-lg md:text-3xl leading-8 md:leading-[48px] mt-0.5 md:mt-1.5;
+      @apply inline-block font-MorabbaLight text-lg md:text-3xl leading-8 md:leading-[48px] mt-0.5 md:mt-1.5  text-zinc-700 dark:text-white;
    }
 
    .section-link {
