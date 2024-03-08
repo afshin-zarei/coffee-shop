@@ -141,6 +141,41 @@
       background-size: cover;
    }
 
+   .services .container {
+      @apply relative;
+   }
+   .services .container::after, 
+   .services .container::before {
+      content: "";
+      display: block;
+      position: absolute;
+      inset: 0;
+      margin: auto;
+      background-color: #d1d5db;
+   }
+   html.dark .services .container::after, 
+   html.dark .services .container::before {
+      background-color: rgba(255, 255, 255, 0.1);
+   }
+
+   .services .container::after {
+      width: 1px;
+      height: calc(100% + 20px);
+   }
+
+   .services .container::before {
+      width: calc(100% - 32px);
+      height: 1px;
+   }
+
+
+   @media screen and (min-width: 640px) {
+      .services .container::after, 
+      .services .container::before {
+         content: none;
+      }
+   }
+
    @media  screen and (min-width:768px) {
       .offer::after {
          top: -2px;
