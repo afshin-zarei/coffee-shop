@@ -94,9 +94,9 @@
       @apply w-[95px] h-[95px] border-white/80;
 
    }
-   .curve {
+   /* .curve {
       transform: translateY(0.2px);
-   }
+   } */
 
    .title {
       @apply text-zinc-700 dark:text-white;

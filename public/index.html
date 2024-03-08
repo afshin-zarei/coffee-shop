@@ -421,7 +421,11 @@
                      <rect width="66" height="73" fill="white"/>
                      </clipPath>
                      </defs>
-                     </symbol>
+                  </symbol>
+
+                  <symbol id="curve-footer" xmlns="http://www.w3.org/2000/svg" width="100" height="22" viewBox="0 0 100 22" fill="currentColor">
+                     <path d="M50 22C31 22 19 -3.26655e-06 1.9233e-06 -3.02023e-06L100 -3.8147e-06C81.25 -5.45387e-06 69 22 50 22Z" fill="currentColor"/>
+                  </symbol>
                      
                   
                
@@ -2041,6 +2045,21 @@
 
       </main>
 
+      <!-- App Footer -->
+      <footer class="relative py-8 md:py-11 text-gray-300 bg-zinc-700">
+         <div>
+            <svg class="curve absolute top-0 left-0 right-0 mx-auto hidden md:inline-block w-[100px] h-[22px] text-gray-100 dark:text-zinc-800">
+               <use href="#curve-footer"></use>
+            </svg>
+            <div class="absolute left-0 right-0 top-0 -translate-y-1/2 rotate-180 mx-auto w-7.5 h-7.5 hidden md:flex justify-center items-center border-2 border-orange-300 rounded-full">
+               <svg class="w-5 h-5 text-zinc-700 dark:text-white">
+                  <use href="#chevron-down-mini"></use>
+               </svg>
+            </div>
+         </div>
+         <div class="w-[98%] lg:w-[90%] mx-auto h-[500px]"></div>
+      </footer>
+
       <!-- transparent box  -->
       <div class="overlay"></div>
       <script src="scripts/app.js"></script>
@@ -2068,6 +2087,6 @@
                },
             },
          });
-       </script>
+      </script>
    </body>
 </html>
