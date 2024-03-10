@@ -30,10 +30,13 @@ module.exports = {
             tightest: "-.065em",
          },
          spacing: {
-            7.5: "1.875rem",
-            25: "6.25rem",
-            30: "7.5rem",
-            50: "12.5rem"
+            4.5: "1.125rem", // 18px
+            6.5: "1.625rem", // 26px
+            7.5: "1.875rem", // 30px
+            25: "6.25rem",   // 100px
+            30: "7.5rem",    // 120px
+            43: "10.75rem",  // 172px
+            50: "12.5rem"    // 200px
          },
          container: {
             center: true,
