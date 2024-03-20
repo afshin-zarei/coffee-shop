@@ -30,13 +30,16 @@ module.exports = {
             tightest: "-.065em",
          },
          spacing: {
-            4.5: "1.125rem", // 18px
-            6.5: "1.625rem", // 26px
-            7.5: "1.875rem", // 30px
-            25: "6.25rem",   // 100px
-            30: "7.5rem",    // 120px
-            43: "10.75rem",  // 172px
-            50: "12.5rem"    // 200px
+            4.5: "1.125rem",   // 18px
+            6.5: "1.625rem",   // 26px
+            7.5: "1.875rem",   // 30px
+            9.5: "2.375rem",   // 38px
+            15.5: "3.875rem",  // 62px
+            19: "4.75rem",     // 62px
+            25: "6.25rem",     // 100px
+            30: "7.5rem",      // 120px
+            43: "10.75rem",    // 172px
+            50: "12.5rem"      // 200px
          },
          container: {
             center: true,
@@ -55,7 +58,8 @@ module.exports = {
          'sm': '640px',   
          'md': '768px',   
          'lg': '1024px',   
-         'xl': '1280px', 
+         'xl': '1280px',
+         '2xl': '1536px',
       },
    },
    plugins: [
